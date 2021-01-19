@@ -3,7 +3,7 @@ from tika import parser
 
 
 #definitions
-def readPdf():
-    text = parser.from_file('sample.pdf')
+def readPdf(filename):
+    text = parser.from_file(filename)
 
     return (text['content'])
