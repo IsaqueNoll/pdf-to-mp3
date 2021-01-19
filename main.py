@@ -1,10 +1,10 @@
 #imports
-import pdf-to-str
-import str-to-wav
+import pdf_to_str as pts
+import str_to_wav as stw
 
 
 
 #def
 def writePdf(filename):
-    text = pdf-to-str.readPdf(filename)
-    str-to-wav.save(text)
+    text = pts.readPdf(filename)
+    stw.save(text)
